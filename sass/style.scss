@@ -1,0 +1,465 @@
+@use './variables';
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: "Inter";
+    overflow-x: hidden;
+}
+
+.background-neymar {
+    background: url(/img/wallpaper.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    max-width: 100%;
+    width: 100%;
+}
+
+nav {
+    display: flex;
+    gap: 30px;
+    font-size: 15px;
+}
+
+nav a:hover {
+    color: variables.$secundary-color;
+}
+
+nav a {
+    color: variables.$primary-color;
+    font-weight: 500;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    padding-top: 2rem;
+    align-items: center;
+    text-align: center;
+    gap: 10rem;
+}
+
+.button-enter {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.button-enter button {
+    background-color: variables.$secundary-color;
+    padding: 10px;
+    color: variables.$primary-color;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.button-enter button:hover {
+    color: variables.$primary-color;
+    background: #ff4040;
+}
+
+.button-enter a {
+    color: variables.$primary-color;
+    font-size: 18px;
+}
+
+.button-enter a:hover {
+    color: variables.$secundary-color;
+}
+
+.neymar-meio-container {
+    margin-left: 19%;
+    margin-top: 12%;
+    max-width: 100%;
+}
+
+.meio-neymar h1 {
+    color: variables.$primary-color;
+    font-size: 68px;
+}
+
+.meio-neymar p {
+    color: variables.$primary-color;
+    font-size: 17px;
+    font-style: italic;
+    font-weight: 500;
+    margin-top: 1rem;
+    line-height: 25px;
+}
+
+.btn {
+    background-color: variables.$secundary-color;
+    padding: 10px;
+    color: variables.$primary-color;
+    border-radius: 5px;
+    border: none;
+    margin-top: 3rem;
+    cursor: pointer;
+    width: 150px;
+}
+
+.btn:hover {
+    color: variables.$primary-color;
+    background: #ff4040;
+}
+
+.resultados {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    padding: 6rem;
+}
+
+.resultados img {
+    width: 100px;
+    height: auto;
+}
+
+.resultados h3 {
+    font-size: 30px;
+}
+
+#bg-white p {
+    font-size: 10px;
+    color: variables.$terciaria-color;
+    line-height: 10px;
+}
+
+.bg-hero {
+    background: url(/img/wallapaper2.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    max-width: 100%;
+    height: 80vh;
+    width: 100%;
+}
+
+#bg-white {
+    position: absolute;
+    background-color: variables.$primary-color;
+    width: 500px;
+    padding: 50px;
+    top: 163%;
+    left: 30%;
+}
+
+#bg-white h1 {
+    color: variables.$quartenario-color;
+    margin-bottom: 10px;
+    border-left: solid 3px variables.$secundary-color;
+    padding-left: 1rem;
+}
+
+#bg-white a {
+    color: variables.$secundary-color;
+    font-weight: 600;
+    font-size: 15px;
+    margin-bottom: 50px;
+}
+
+#bg-white p {
+    text-align: left;
+    line-height: 1rem;
+    margin-bottom: 10px;
+}
+
+.cards img {
+    width: 350px;
+    height: auto;
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: grayscale(0%);
+    transition: .6s;
+}
+
+.cards img:hover {
+    background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)) url(/img/img.png);
+    background-size: 110%;
+    filter: grayscale(100%);
+    cursor: pointer;
+}
+
+.cards p {
+    font-size: 10px;
+    font-weight: 600;
+    color: variables.$secundary-color;
+}
+
+.cards span {
+    font-size: 10px;
+    font-weight: 600;
+    color: variables.$quartenario-color;
+    position: relative;
+    left: 0px;
+}
+
+.equipe-principal {
+    align-items: center;
+    display: flex;
+    left: 9%;
+    gap: 1rem;
+    flex-wrap: wrap;
+    position: absolute;
+    padding: 4rem;
+}
+
+.noticia h1 {
+    margin-top: 5rem;
+    margin-left: 12.5rem;
+    border-left: solid 3px variables.$secundary-color;
+    padding-left: 1rem;
+}
+
+.noticia button {
+    margin-bottom: 4.5rem;    
+}
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    position: absolute;
+    top: 2030px;
+}
+
+.paragrafo {
+    display: flex;
+    gap: 9.7rem;
+    padding: 0.75rem;
+}
+
+.paragrafo p {
+    position: relative;
+    left: -3%;
+}
+
+.cards h4 {
+    margin-top: 1rem;
+    position: relative;
+    left: 0;
+}
+
+/* footer */
+
+.card-footer p {
+    font-size: 13px;
+    color: variables.$primary-color;
+    line-height: 30px;
+}
+
+footer {
+    background-color: variables.$quartenario-color;
+    background-position: center;
+    height: 30vh;
+    max-width: 100%;
+    width: 100%;
+    position: absolute;
+    top: 310%;
+    width: 100%;
+    padding: 4rem;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: left;
+    gap: 10rem;
+    margin-left: 9%;
+    position: absolute;
+}
+
+footer h1 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: variables.$primary-color;
+}
+
+footer p:hover {
+    color: variables.$secundary-color;
+    cursor: pointer;
+}
+
+
+/* Responsividade */
+
+@media (max-width: 576px) {
+
+    .background-neymar {
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        height: 679px;
+    }
+
+    .neymar-meio-container {
+        position: relative;
+        top: 40%;
+        left: 7%;
+        margin-left: 0;
+    }
+
+    .neymar-meio-container h1 {
+        font-size: 40px;
+        font-style: italic;
+    }
+
+    .neymar-meio-container p {
+        margin-left: -5%;
+    }
+
+    .logo {
+        position: absolute;
+        top: 3%;
+        left: 7%;
+    }
+
+    .resultados h3 {
+        display: none;
+    }
+
+    .resultados {
+        justify-content: center;
+    }
+
+    .img1 {
+        position: absolute;
+        left: 10%;
+    }
+
+    .resultados h2, p {
+        font-size: 36px;
+        font-weight: 500;
+        position: relative;
+        left: 5%;
+    }
+
+    .img2 {
+        position: absolute;
+        left: 70%;
+    }
+
+    .bg-hero {
+        justify-content: center;
+        height: 610px;
+        width: 100%;
+        left: 0px;
+        top: 685px;
+        border-radius: 0px;
+
+    }
+
+    #bg-white {
+        position: absolute;
+        width: 312px;
+        height: 488px;
+        top: 950px;
+        left: 24px;
+        padding: 1.5rem;
+    }
+
+    #bg-white h1 {
+        margin-bottom: 1rem;
+    }
+
+    #bg-white p {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 18px;
+        text-align: left;
+        margin-bottom: 2rem;
+        margin-left: -5%;
+        margin-right: 4%;
+    }
+
+    #bg-white a {
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 22px;
+        letter-spacing: 0em;
+        text-align: left;
+        margin-bottom: 2rem;
+    }
+
+    .equipe-principal {
+        position: relative;
+        justify-content: center;
+        left: 1.5%;
+        top: auto;
+        width: 100%;
+        padding: 0%;
+        gap: 3rem;
+        
+    }
+
+    .btn-container {
+        position: absolute;
+        top: 2500px;
+    }
+
+    .btn {
+        width: 85%;
+        padding: 1rem;
+        font-size: 14px;
+        font-weight: 600;
+    }
+
+    .noticia {
+        width: 100%;
+        height: auto;
+    }
+
+    .noticia h1 {
+        position: relative;
+        margin-left: 7%;
+        margin-bottom: 3rem;
+    }
+
+    .btn-container {
+        position: absolute;
+        margin-top: 11rem;
+    }
+
+    footer {
+        position: absolute;
+        width: 69%;
+        height: 490px;
+        margin-top: 5%;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        justify-content: left;
+        width: 100%;
+        height: auto;
+        margin-left: -10%;
+        gap: 2rem;
+    }
+
+    .card-footer p {
+        margin-left: -5%;
+        font-size: 16px;
+    }
+
+    nav {
+        position: absolute;
+        display: flex;
+        gap: 30px;
+        font-size: 15px;
+    }
+
+    nav li a {
+        display: none;
+    }
+
+    .button-enter {
+        display: none;
+    }
+}
